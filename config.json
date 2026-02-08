@@ -1,1 +1,43 @@
-{}
+{
+  "company": {
+    "name": "Shivalik Bimetal Controls Ltd",
+    "ticker": "SBCL",
+    "ir_website": "https://www.shivalikbimetals.com",
+    "ir_page": "https://www.shivalikbimetals.com/investors-overview.php"
+  },
+  "data_extraction": {
+    "target_quarters": 20,
+    "output_formats": [
+      "csv",
+      "json"
+    ],
+    "metrics": {
+      "volume_metrics": [
+        "shunt_volume_mt",
+        "bimetal_volume_mt",
+        "shunt_quarterly_yoy_volume_growth",
+        "shunt_ttm_yoy_volume_growth",
+        "bimetal_quarterly_yoy_volume_growth",
+        "bimetal_ttm_yoy_volume_growth",
+        "volume_growth_yoy_shunt_bimetal"
+      ],
+      "realisation_metrics": [
+        "bimetal_realisation_per_kg",
+        "shunt_realisation_per_kg"
+      ],
+      "growth_metrics": [
+        "quarterly_yoy_revenue_growth",
+        "ttm_yoy_growth",
+        "bimetal_quarterly_yoy_revenue_growth",
+        "bimetal_ttm_yoy_growth",
+        "shunt_quarterly_yoy_revenue_growth",
+        "shunt_ttm_yoy_growth"
+      ]
+    }
+  },
+  "storage": {
+    "raw_dir": "data/raw_presentations",
+    "extracted_dir": "data/extracted_data",
+    "processed_dir": "data/processed_data"
+  }
+}
